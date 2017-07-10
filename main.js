@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Feedly-Switcher
 // @namespace    https://github.com/bulbipop/feedly-switcher
-// @version      0.1
+// @version      0.2
 // @match        https://feedly.com/*
 // @run-at       document-idle
 // ==/UserScript==
@@ -28,6 +28,10 @@ function main() {
 
     let upgradeButton = document.querySelector('.pro.primary.small')
     upgradeButton.insertAdjacentHTML('afterend', button)
+
+    document.addEventListener("dragend", function(ev) {
+          ev.target.nextSibling.click()
+      })
 }
 
 setTimeout(main, 4000)

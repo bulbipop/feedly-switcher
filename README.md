@@ -1,3 +1,4 @@
 feedly-switcher
 
-A small script that adds a button to quickly switch between "Latest" and "Saved" pages.
+[x] New button to quickly switch between "Latest" and "Saved" pages.
+[x] Auto "Marked as read and hide" when article's title is dragged.
